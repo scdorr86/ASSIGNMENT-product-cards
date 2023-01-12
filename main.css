@@ -1,0 +1,13 @@
+body {
+  background-color: blanchedalmond;
+}
+#container {
+  display: flex;
+}
+.card1 {
+  border: 10px double;
+  background-color: aliceblue;
+}
+h2 {
+  border: 10px dotted lightblue;
+}
