@@ -3,11 +3,59 @@ body {
 }
 #container {
   display: flex;
+  flex-flow: row wrap;
+  flex: 3;
 }
-.card1 {
+.card1, .card2, .card3, .card4 {
+  display: flex;
+  flex-direction: column;
   border: 10px double;
-  background-color: aliceblue;
+  background-color: rgb(255, 193, 255);
+  margin: 5px 5px;
+  width: 26%;
+  min-height: 26%;
+  overflow: hidden;
+  align-content: space-between;
+ 
 }
 h2 {
-  border: 10px dotted lightblue;
+  border: 1px solid lightblue;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Fira Sans', sans-serif;
+}
+.img {
+  display: flex;
+  justify-content: center;
+}
+.sec2, .sec3 {
+  font-weight: bold;
+  flex-grow: 25%;
+}
+.avail {
+  color: yellow;
+  background-color: darkgray;
+}
+footer {
+  font-style: italic;
+  font-size: small;
+}
+.desc {
+  text-align: justify;
+}
+img {
+  height: 200px;
+  width: 200px;
+}
+.sec1 {
+  flex-grow: 50%;
+  margin-top: auto;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
 }
