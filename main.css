@@ -8,12 +8,15 @@ body {
 }
 .card1, .card2, .card3, .card4 {
   display: flex;
+  padding: 0%;
+  flex-grow: ;
+  flex-basis: 26%;
   flex-direction: column;
   border: 10px double;
   background-color: rgb(255, 193, 255);
   margin: 5px 5px;
-  width: 26%;
-  min-height: 26%;
+  width: ;
+  min-height: ;
   overflow: hidden;
   align-content: space-between;
  
@@ -29,10 +32,12 @@ h2 {
 .img {
   display: flex;
   justify-content: center;
+  padding: 1%;
 }
 .sec2, .sec3 {
   font-weight: bold;
   flex-grow: 25%;
+  padding: 2%;
 }
 .avail {
   color: yellow;
@@ -44,10 +49,19 @@ footer {
 }
 .desc {
   text-align: justify;
+  min-height: 108px;
+  padding: 2%;
+}
+.avail {
+  margin-top: auto;
 }
 img {
-  height: 200px;
-  width: 200px;
+  max-width: 100%;
+  margin-top: auto;
+  border: 2px solid lightblue;
+  padding: ;
+  height: ;
+  width: ;
 }
 .sec1 {
   flex-grow: 50%;
@@ -58,4 +72,17 @@ img {
 }
 .absolute {
   position: absolute;
+}
+.card4 {
+  background-color: #F8BBD0;
+}
+@media (max-width: 920px) {
+  .card1, .card2, .card3, .card4 {
+    flex: 1 26%;
+  }
+}
+@media (max-width: 600px) {
+  .card1, .card2, .card3, .card4 {
+    flex: 1 45%;
+  }
 }
